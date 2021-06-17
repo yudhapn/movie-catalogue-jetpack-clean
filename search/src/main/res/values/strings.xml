@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search_movie_or_series">Search Movie or Series</string>
+    <string name="search_card_transition_name">search_card_%1$s</string>
+    <string name="navigation_up_image_button">Navigation Up image Button</string>
+
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Movie Catalogue Jetpack</string>
+    <string name="movie_catalogue">Movie Catalogue</string>
+    <string name="title_movie">Movie</string>
+    <string name="title_tv_show">TV Show</string>
+    <string name="movie_card_transition_name">movie_card_%1$s</string>
+    <string name="movie_detail_card_transition_name">movie_detail_card</string>
+    <string name="series_card_transition_name">series_card_%1$s</string>
+    <string name="series_detail_card_transition_name">series_detail_card</string>
+    <string name="retry">retry</string>
+    <string name="score_image_icon">Score Image Icon</string>
+    <string name="series_image">Series Image</string>
+    <string name="movie_image">Movie Image</string>
+</resources>

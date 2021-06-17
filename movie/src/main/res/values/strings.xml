@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="plot_summary">Plot Summary</string>
+    <string name="movie_backdrop_image">movieBackdropImage</string>
+    <string name="movie_poster_image">moviePosterImage</string>
+    <string name="star_icon">starIcon</string>
+</resources>

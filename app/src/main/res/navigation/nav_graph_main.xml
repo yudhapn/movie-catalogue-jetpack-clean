@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="id.ypran.moviecataloguejetpack.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_seriesDetailFragment"
+            app:destination="@id/seriesDetailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="id.ypran.movie.ui.MovieDetailFragment"
+        android:label="fragment_movie_detail"
+        app:moduleName="movie">
+        <argument
+            android:name="movie"
+            app:argType="id.ypran.core.movie.domain.model.Movie" />
+    </fragment>
+    <fragment
+        android:id="@+id/seriesDetailFragment"
+        android:name="id.ypran.tv_show.ui.SeriesDetailFragment"
+        android:label="fragment_series_detail"
+        app:moduleName="tv_show">
+        <argument
+            android:name="series"
+            app:argType="id.ypran.core.series.domain.model.Series" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="id.ypran.search.ui.SearchCatalogueFragment"
+        android:label="fragment_search"
+        app:moduleName="search" >
+        <action
+            android:id="@+id/action_searchFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_seriesDetailFragment"
+            app:destination="@id/seriesDetailFragment" />
+    </fragment>
+</navigation>
